@@ -6,6 +6,9 @@ name: CI to Docker Hub
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
+    tags:
+    # to launch test : $ git tag -a v1.0.2  ;$ git push origin v1.0.2
+      -"v*.*.*"
     branches: [ main ]
   pull_request:
     branches: [ main ]
