@@ -45,9 +45,7 @@ static int call_converter(char *flag, va_list ap)
 
 int isflag(char c)
 {
-    int index = 0;
-
-    for (index; flags_array[index] != '\0'; index++) {
+    for (int index = 0; flags_array[index] != '\0'; index++) {
         if (flags_array[index] == c) {
             return index;
         }

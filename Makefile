@@ -21,8 +21,12 @@ TESTBIN	=	unit_test
 
 TEST	=	tests/path.c
 
+#-------------------------------------------------------------
+#DO NOT EDIT BELOW THIS LINE
+#-------------------------------------------------------------
+
 subsystem:
-	cd lib && $(MAKE)
+	cd $(LIBPATH) && $(MAKE)
 
 $(EXEC): subsystem
 	gcc -o $(EXEC) $(SRC) $(MAIN) -L$(LIBPATH) -l$(LIBNAME)
@@ -35,7 +39,7 @@ clean:
 
 fclean: clean
 	rm -f $(EXEC)
-	cd lib && $(MAKE) fclean
+	cd $(LIBPATH) && $(MAKE) fclean
 
 re: fclean all
 
