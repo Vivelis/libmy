@@ -55,6 +55,7 @@ SRC	=	my/my_compute_power_rec.c	\
 		my/my_printf_usint2.c		\
 		my/my_printf_char.c			\
 		my/my_printf_point.c		\
+		my/do_strmalloc.c			\
 		my/my_printf_flag_detection.c
 
 #obj file path

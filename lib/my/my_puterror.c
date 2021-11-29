@@ -14,4 +14,5 @@ void my_puterror(char *str)
 
     len = my_strlen(str);
     write(2, str, len);
+    exit(84);
 }
