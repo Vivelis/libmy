@@ -1,17 +1,17 @@
 /*
 ** EPITECH PROJECT, 2021
-** task02
+** my_puterror
 ** File description:
-** display one by one the characters of a string
+** print the str in param in the error output
 */
 
 #include "../headers/my.h"
 #include <unistd.h>
 
-void my_putstr(char const *str)
+void my_puterror(char *str)
 {
     int len = 0;
 
     len = my_strlen(str);
-    write(1, str, len);
+    write(2, str, len);
 }

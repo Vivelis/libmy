@@ -5,16 +5,50 @@ NAME
     my_putchar - print a character
 
 SYNOPSIS
-    #include "lib/my/my.h"
+    #include "lib/headers/my.h"
     
     void my_putchar(char c);
     
 DESCRIPTION
-    The my_putchar() function print the char in c in the standard output.
+    The my_putchar() function print the char in the c arg in the standard output.
 
 EXAMPLES
     c = 'A'
     my_putchar print "A"
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_putstr - print a string
+
+SYNOPSIS
+    #include "lib/headers/my.h"
+    
+    void my_putstr(char const *str);
+    
+DESCRIPTION
+    The my_putstr() function print the string in str arg in the standard output.
+
+EXAMPLES
+    my_putstr("coucou")
+    my_putstr print "coucou"
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_puterror - print a string in stderr
+
+SYNOPSIS
+    #include "lib/headers/my.h"
+    
+    void my_puterr(char const *str);
+    
+DESCRIPTION
+    The my_putstr() function print the string in the str arg in the error output.
+
+EXAMPLES
+    my_putstr("error: bad arg")
+    my_putstr print "error: bad arg"
 
 --------------------------------------------------------------------------------
 
@@ -53,8 +87,6 @@ int my_strncmp(char const *s1, char const *s2, int n);
 void my_swap(int *a, int *b);
 
 char *my_strupcase(char *str);
-
-int my_putstr(char const *str);
 
 char *my_strlowcase(char *str);
 
