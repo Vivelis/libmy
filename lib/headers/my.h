@@ -18,7 +18,7 @@ int my_put_nbr(int nb);
 int my_strncmp(char const *s1, char const *s2, int n);
 void my_swap(int *a, int *b);
 char *my_strupcase(char *str);
-int my_putstr(char const *str);
+void my_putstr(char const *str);
 char *my_strlowcase(char *str);
 int my_strlen(char const *str);
 char *my_strcapitalize(char *str);
@@ -51,4 +51,5 @@ int my_revstrtol(char *str, int *start);
 char *my_inttos(int nbr);
 int my_intlen(int nbr);
 int my_printf(const char *format, ...);
+void my_puterror(char *str);
 #endif
