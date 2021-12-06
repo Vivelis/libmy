@@ -6,11 +6,15 @@
 */
 
 #include <stdlib.h>
+#include <stddef.h>
 #include "../headers/my.h"
 
-void do_strmalloc(char *str, ssize_t size)
+char *do_strmalloc(ssize_t size)
 {
+    char *str = NULL;
+
     str = malloc(sizeof(char) * (size + 1));
     if (!str)
         my_puterror("error: malloc have failed");
+    return str;
 }
