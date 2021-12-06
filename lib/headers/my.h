@@ -53,5 +53,5 @@ char *my_inttos(int nbr);
 int my_intlen(int nbr);
 int my_printf(const char *format, ...);
 void my_puterror(char *str);
-void do_strmalloc(char *str, long size);
+char *do_strmalloc(long size);
 #endif
