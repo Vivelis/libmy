@@ -36,20 +36,19 @@ EXAMPLES
 --------------------------------------------------------------------------------
 
 NAME
-    my_puterror - print a string in stderr and exit
+    my_puterror - print a string in stderr.
 
 SYNOPSIS
     #include "lib/headers/my.h"
     
-    void my_puterr(char const *str);
+    void my_puterror(char const *str);
     
 DESCRIPTION
-    The my_putstr() function print the string in the str arg in the error output.
-    The fct finaly exit 84;
+    The my_puterror() function print the string in the str arg in the error output.
 
 EXAMPLES
-    my_putstr("error: bad arg")
-    my_putstr print "error: bad arg"
+    my_puterror("error: bad arg")
+    my_puterror print "error: bad arg"
 
 --------------------------------------------------------------------------------
 

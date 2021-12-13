@@ -8,9 +8,9 @@
 #include <stdlib.h>
 #include "../headers/my.h"
 
-void do_strmalloc(char *str, ssize_t size)
+void do_strmalloc(char **str, ssize_t size)
 {
-    str = malloc(sizeof(char) * (size + 1));
+    *str = malloc(sizeof(char) * (size + 1));
     if (!str)
         my_puterror("error: malloc have failed");
 }
