@@ -25,13 +25,13 @@ TEST	=	tests/path.c
 #DO NOT EDIT BELOW THIS LINE
 #-------------------------------------------------------------
 
-subsystem:
-	cd $(LIBPATH) && $(MAKE)
-
 $(EXEC): subsystem
 	gcc -o $(EXEC) $(SRC) $(MAIN) -L$(LIBPATH) -l$(LIBNAME)
 
 all: $(EXEC)
+
+subsystem:
+	cd $(LIBPATH) && $(MAKE)
 
 clean:
 	rm -f *#
