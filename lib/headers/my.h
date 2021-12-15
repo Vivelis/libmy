@@ -52,6 +52,6 @@ int my_revstrtol(char *str, int *start);
 char *my_inttos(int nbr);
 int my_intlen(int nbr);
 int my_printf(const char *format, ...);
-void my_puterror(char *str);
-void do_strmalloc(char **str, long size);
+int my_puterror(char *str, int error_num);
+int do_strmalloc(char **str, long size);
 #endif
