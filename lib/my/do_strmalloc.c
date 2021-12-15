@@ -9,12 +9,17 @@
 #include <stddef.h>
 #include "../headers/my.h"
 
-char *do_strmalloc(ssize_t size)
+int do_strmalloc(char **str, ssize_t size)
 {
-    char *str = NULL;
+    *str = malloc(sizeof(char) * (size + 1));
 
-    str = malloc(sizeof(char) * (size + 1));
-    if (!str)
-        my_puterror("error: malloc have failed");
-    return str;
+    if (size <= 0) {
+        *str = NULL;
+        return my_puterror("error: bad size", 84);
+    }
+    if (!str) {
+        *str = NULL;
+        return my_puterror("error: malloc have failed", 84);
+    }
+    return 0;
 }
