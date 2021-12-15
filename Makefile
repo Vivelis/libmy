@@ -5,21 +5,22 @@
 ## Makefile
 ##
 
+## path for each scripts
 SRC	=	prog/path.c
-
-LIBPATH	=	./lib/
-
-LIBNAME	=	my
-
+TEST	=	tests/path.c
 MAIN	=	main/prog/path.c
 
+## path to acced the lib file
+LIBPATH	=	./lib/
+
+## name of the lib
+LIBNAME	=	my
+
+## name of the binaries
 EXEC	=	exec_name
-
 DEBUGBIN	=	debug
-
 TESTBIN	=	unit_test
 
-TEST	=	tests/path.c
 
 #-------------------------------------------------------------
 #DO NOT EDIT BELOW THIS LINE
