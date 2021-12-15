@@ -6,6 +6,7 @@
 */
 
 #include <stdlib.h>
+#include <stddef.h>
 #include "../headers/my.h"
 
 int do_strmalloc(char **str, ssize_t size)
