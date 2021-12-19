@@ -35,7 +35,7 @@ static int call_converter(char *flag, va_list ap)
     int printed = 0;
 
     if (!fct_array)
-        return my_puterror("error: can't initialize fct_array", -1);
+        return my_puterror("error: can't initialize fct_array\n", -1);
     for (int f = 0; flag[f] != '\0'; f++) {
         printed += browse_flagarray(flag, f, fct_array, ap);
     }
@@ -89,7 +89,7 @@ int find_flag(const char *format, va_list ap)
             i++;
             flag = find_flag_type(format, &i);
             if (!flag)
-                return my_puterror("error: bad flag", -1);
+                return my_puterror("error: bad flag\n", -1);
             printed += call_converter(flag, ap);
             free(flag);
             flag = NULL;
