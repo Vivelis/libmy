@@ -29,7 +29,7 @@ static int browse_flagarray(char *flag, int f, fct_array_t *fct_a, va_list ap)
     return 1;
 }
 
-static int call_converter(char *flag, va_list ap)
+int call_converter(char *flag, va_list ap)
 {
     fct_array_t *fct_array = init_fct_array();
     int printed = 0;
@@ -79,24 +79,3 @@ char *find_flag_type(const char *str, int *index)
     return flag;
 }
 
-int find_flag(const char *format, va_list ap)
-{
-    int printed = 0;
-    char *flag = NULL;
-
-    for (int i = 0; format[i] != '\0'; i++) {
-        if (format[i] == '%') {
-            i++;
-            flag = find_flag_type(format, &i);
-            if (!flag)
-                return my_puterror("error: bad flag\n", -1);
-            printed += call_converter(flag, ap);
-            free(flag);
-            flag = NULL;
-        } else {
-            my_putchar(format[i]);
-            printed++;
-        }
-    }
-    return printed;
-}
