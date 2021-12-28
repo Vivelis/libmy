@@ -34,6 +34,8 @@ int call_converter(char *flag, va_list ap)
     fct_array_t *fct_array = init_fct_array();
     int printed = 0;
 
+    if (flag == NULL)
+        return my_puterror("error: flag is NULL\n", -1);
     if (!fct_array)
         return my_puterror("error: can't initialize fct_array\n", -1);
     for (int f = 0; flag[f] != '\0'; f++) {
@@ -63,7 +65,8 @@ char *find_flag_type(const char *str, int *index)
 
     flag_index = isflag(str[*index]);
     if (flag_index == -1 ) {
-        flag = malloc(sizeof(char) * 2);
+        if ((flag = malloc(sizeof(char) * 2)) == NULL)
+            return NULL;
         flag[0] = str[*index];
         return flag;
     }
@@ -74,8 +77,7 @@ char *find_flag_type(const char *str, int *index)
         return NULL;
     for (int x = 0; x < len; x++) {
         *index = *index + x;
-        flag[x] = str[*index];
+        flag[x] = str[(*index)];
     }
     return flag;
 }
-

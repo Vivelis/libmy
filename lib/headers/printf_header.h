@@ -43,7 +43,6 @@ int find_flag(const char *format, va_list ap);
 int disp_pointer(va_list ap);
 int disp_pourcent(va_list ap);
 
-
 // my_printf_sint.c
 int put_snbr_printf(int nbr);
 int disp_sint(va_list ap);
