@@ -21,13 +21,17 @@ EXEC	=	exec_name
 DEBUGBIN	=	debug
 TESTBIN	=	unit_test
 
+## flags
+CFLAG	=	-W
+DEBUGFLAG	=	-g3 -Wall -Wextra
+TESTFLAG	=	-lcriterion
 
 #-------------------------------------------------------------
 #DO NOT EDIT BELOW THIS LINE
 #-------------------------------------------------------------
 
 $(EXEC): subsystem
-	gcc -o $(EXEC) $(SRC) $(MAIN) -L$(LIBPATH) -l$(LIBNAME)
+	gcc -o $(EXEC) $(SRC) $(MAIN) -L$(LIBPATH) -l$(LIBNAME) $(CFLAG)
 
 all: $(EXEC)
 
@@ -45,10 +49,10 @@ fclean: clean
 re: fclean all
 
 debug: fclean subsystem
-	gcc -o $(DEBUGBIN) $(SRC) $(MAIN) -L$(LIBPATH) -l$(LIBNAME) -g3 -Wall -Wextra
+	gcc -o $(DEBUGBIN) $(SRC) $(MAIN) -L$(LIBPATH) -l$(LIBNAME) $(DEBUGFLAG)
 
 unit_tests: fclean subsystem $(TEST)
-	gcc -o $(TESTBIN) $(SRC) $(TEST) -L$(LIBPATH) -l$(LIBNAME) -lcriterion
+	gcc -o $(TESTBIN) $(SRC) $(TEST) -L$(LIBPATH) -l$(LIBNAME) $(TESTFLAG)
 
 run_tests: unit_tests
 	./$(TESTBIN)
