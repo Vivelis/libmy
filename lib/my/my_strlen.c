@@ -6,10 +6,14 @@
 **  found in the string passed as parameter.
 */
 
+#include <stddef.h>
+
 int my_strlen(char const *str)
 {
     int cmpt = 0;
 
+    if (str == NULL)
+        return 0;
     while (str[cmpt] != '\0') {
         cmpt++;
     }
