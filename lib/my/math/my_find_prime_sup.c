@@ -6,7 +6,7 @@
 ** greater than or equal to the number given as a parameter.
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 int my_find_prime_sup(int nb)
 {

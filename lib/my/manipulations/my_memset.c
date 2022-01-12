@@ -5,7 +5,7 @@
 ** fill the first n bytes of s with c
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 void my_memset(char *s, char c, int n)
 {

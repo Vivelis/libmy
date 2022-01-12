@@ -5,7 +5,7 @@
 ** a function that sort an integer in ascending order.
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 static int condition(int *array, int size, int *cmpt)
 {

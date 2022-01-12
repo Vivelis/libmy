@@ -12,12 +12,12 @@ LIB	=	libmy.a
 CC          := cc
 
 #library sources
-SRC	=	my/my_compute_power_rec.c				\
-		my/my_compute_square_root.c				\
-		my/my_swap.c							\
-		my/my_memset.c							\
-		my/my_sort_int_array.c					\
-		my/my_find_prime_sup.c					\
+SRC	=	my/math/my_compute_power_rec.c			\
+		my/math/my_compute_square_root.c		\
+		my/math/my_sort_int_array.c				\
+		my/math/my_find_prime_sup.c				\
+		my/manipulations/my_swap.c				\
+		my/manipulations/my_memset.c			\
 		my/my_put/my_putchar.c					\
 		my/my_put/my_puterror.c					\
 		my/my_put/my_put_nbr.c					\
