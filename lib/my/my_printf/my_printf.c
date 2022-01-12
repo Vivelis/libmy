@@ -8,8 +8,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
-#include "../headers/my.h"
-#include "../headers/printf_header.h"
+#include "../../headers/my.h"
+#include "../../headers/printf_header.h"
 
 int my_printf(const char *format, ...)
 {

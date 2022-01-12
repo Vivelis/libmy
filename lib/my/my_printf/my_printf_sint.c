@@ -5,7 +5,7 @@
 ** my_printf_s_int.c
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 #include <stdarg.h>
 
 /* display the int nbr parameter and

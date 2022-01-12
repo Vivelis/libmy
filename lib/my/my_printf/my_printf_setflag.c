@@ -7,8 +7,8 @@
 
 #include <stddef.h>
 #include <stdlib.h>
-#include "../headers/printf_header.h"
-#include "../headers/my.h"
+#include "../../headers/printf_header.h"
+#include "../../headers/my.h"
 
 static int setflag(const char *format, int *i, int *printed, va_list ap)
 {

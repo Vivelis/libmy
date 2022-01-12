@@ -5,7 +5,7 @@
 ** my_printf_us_int.c
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 #include <stdarg.h>
 
 /* display the unsigned int nbr parameter in octal

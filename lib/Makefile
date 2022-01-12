@@ -48,16 +48,16 @@ SRC	=	my/my_compute_power_rec.c	\
 		my/my_revstrtol.c			\
 		my/my_strtol.c				\
 		my/my_inttos.c				\
-		my/my_printf.c				\
-		my/my_printf_fctarr.c		\
-		my/my_printf_sint.c 		\
-		my/my_printf_usint.c		\
-		my/my_printf_usinthex.c		\
-		my/my_printf_char.c			\
-		my/my_printf_point.c		\
-		my/my_printf_setflag.c		\
-		my/do_strmalloc.c			\
-		my/my_printf_flag_detection.c
+		my/my_printf/my_printf.c				\
+		my/my_printf/my_printf_fctarr.c			\
+		my/my_printf/my_printf_sint.c 			\
+		my/my_printf/my_printf_usint.c			\
+		my/my_printf/my_printf_usinthex.c		\
+		my/my_printf/my_printf_char.c			\
+		my/my_printf/my_printf_point.c			\
+		my/my_printf/my_printf_setflag.c		\
+		my/my_printf/my_printf_flag_detection.c	\
+		my/do_strmalloc.c
 
 #obj file path
 BUILDDIR=	obj

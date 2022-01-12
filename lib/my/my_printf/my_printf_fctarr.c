@@ -5,8 +5,8 @@
 ** my_printf_fct_array_manipulation.c
 */
 
-#include "../headers/printf_header.h"
-#include "../headers/my.h"
+#include "../../headers/printf_header.h"
+#include "../../headers/my.h"
 #include <stdarg.h>
 #include <unistd.h>
 #include <stddef.h>

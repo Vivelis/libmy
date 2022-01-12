@@ -5,8 +5,8 @@
 ** my_printf_flag_detection.c
 */
 
-#include "../headers/printf_header.h"
-#include "../headers/my.h"
+#include "../../headers/printf_header.h"
+#include "../../headers/my.h"
 #include <stddef.h>
 #include <stdlib.h>
 

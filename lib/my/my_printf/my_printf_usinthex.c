@@ -5,7 +5,7 @@
 ** my_printf_usint2.c
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 #include <stdarg.h>
 
 /* display the unsigned int nbr parameter in hexadecimal
