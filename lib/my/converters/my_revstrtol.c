@@ -5,7 +5,7 @@
 ** rev string to int
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 #include <stddef.h>
 
 static int conv_nbr(char *str_nbr)

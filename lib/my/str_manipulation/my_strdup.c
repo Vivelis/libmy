@@ -6,7 +6,7 @@
 */
 
 #include <stdlib.h>
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 char *my_strdup(char const *src)
 {

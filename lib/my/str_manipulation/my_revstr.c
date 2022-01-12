@@ -5,7 +5,7 @@
 ** reverses a string.
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 char *my_revstr(char *str)
 {

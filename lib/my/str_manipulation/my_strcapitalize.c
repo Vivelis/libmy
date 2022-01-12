@@ -5,7 +5,7 @@
 ** my_strcapitalize
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 static int toend(char *str)
 {

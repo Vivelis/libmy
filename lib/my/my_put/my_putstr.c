@@ -5,7 +5,7 @@
 ** display one by one the characters of a string
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 #include <unistd.h>
 
 void my_putstr(char const *str)

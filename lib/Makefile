@@ -12,42 +12,39 @@ LIB	=	libmy.a
 CC          := cc
 
 #library sources
-SRC	=	my/my_compute_power_rec.c	\
-		my/my_compute_square_root.c	\
-		my/my_find_prime_sup.c		\
-		my/my_getnbr.c				\
-		my/my_isneg.c				\
-		my/my_is_prime.c			\
-		my/my_putchar.c				\
-		my/my_puterror.c			\
-		my/my_put_nbr.c				\
-		my/my_putstr.c				\
-		my/my_revstr.c				\
-		my/my_showmem.c				\
-		my/my_showstr.c				\
-		my/my_sort_int_array.c		\
-		my/my_strcapitalize.c		\
-		my/my_strcat.c				\
-		my/my_strcmp.c				\
-		my/my_strcpy.c				\
-		my/my_strdup.c				\
-		my/my_str_isalpha.c			\
-		my/my_str_islower.c			\
-		my/my_str_isnum.c			\
-		my/my_str_isprintable.c		\
-		my/my_str_isupper.c			\
-		my/my_strlen.c				\
-		my/my_strlowcase.c			\
-		my/my_strncat.c				\
-		my/my_strncmp.c				\
-		my/my_strncpy.c				\
-		my/my_strstr.c				\
-		my/my_strupcase.c			\
-		my/my_swap.c				\
-		my/my_memset.c				\
-		my/my_revstrtol.c			\
-		my/my_strtol.c				\
-		my/my_inttos.c				\
+SRC	=	my/my_compute_power_rec.c				\
+		my/my_compute_square_root.c				\
+		my/my_swap.c							\
+		my/my_memset.c							\
+		my/my_sort_int_array.c					\
+		my/my_find_prime_sup.c					\
+		my/my_put/my_putchar.c					\
+		my/my_put/my_puterror.c					\
+		my/my_put/my_put_nbr.c					\
+		my/my_put/my_putstr.c					\
+		my/str_manipulation/my_revstr.c			\
+		my/str_manipulation/my_strcapitalize.c	\
+		my/str_manipulation/my_strcat.c			\
+		my/str_manipulation/my_strcmp.c			\
+		my/str_manipulation/my_strcpy.c			\
+		my/str_manipulation/my_strdup.c			\
+		my/is_true/my_str_islower.c				\
+		my/is_true/my_isneg.c					\
+		my/is_true/my_is_prime.c				\
+		my/is_true/my_str_isnum.c				\
+		my/is_true/my_str_isprintable.c			\
+		my/is_true/my_str_isupper.c				\
+		my/str_manipulation/my_strlen.c			\
+		my/str_manipulation/do_strmalloc.c		\
+		my/str_manipulation/my_strlowcase.c		\
+		my/str_manipulation/my_strncmp.c		\
+		my/str_manipulation/my_strncpy.c		\
+		my/str_manipulation/my_strstr.c			\
+		my/str_manipulation/my_strupcase.c		\
+		my/converters/my_revstrtol.c			\
+		my/converters/my_getnbr.c				\
+		my/converters/my_strtol.c				\
+		my/converters/my_inttos.c				\
 		my/my_printf/my_printf.c				\
 		my/my_printf/my_printf_fctarr.c			\
 		my/my_printf/my_printf_sint.c 			\
@@ -56,8 +53,7 @@ SRC	=	my/my_compute_power_rec.c	\
 		my/my_printf/my_printf_char.c			\
 		my/my_printf/my_printf_point.c			\
 		my/my_printf/my_printf_setflag.c		\
-		my/my_printf/my_printf_flag_detection.c	\
-		my/do_strmalloc.c
+		my/my_printf/my_printf_flag_detection.c
 
 #obj file path
 BUILDDIR=	obj

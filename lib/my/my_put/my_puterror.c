@@ -5,7 +5,7 @@
 ** print the str in param in the error output
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 #include <unistd.h>
 
 int my_puterror(char *str, int error_num)

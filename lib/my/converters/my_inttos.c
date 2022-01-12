@@ -5,7 +5,7 @@
 ** integer to string
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 #include <stddef.h>
 #include <stdlib.h>
 

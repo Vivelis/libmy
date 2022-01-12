@@ -8,7 +8,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 char is_number(char input)
 {

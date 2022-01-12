@@ -5,7 +5,7 @@
 ** reproduce strstr
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 char *my_strstr(char *str, char const *to_find)
 {

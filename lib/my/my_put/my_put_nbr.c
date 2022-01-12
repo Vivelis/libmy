@@ -5,7 +5,7 @@
 ** fonction for my library
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 int my_put_nbr(int nb)
 {

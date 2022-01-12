@@ -6,7 +6,7 @@
 ** as parameter is negative or P, if positive or null.
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 int my_isneg(int n)
 {
