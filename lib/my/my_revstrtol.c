@@ -21,9 +21,8 @@ static int conv_nbr(char *str_nbr)
 
 int my_revstrtol(char *str, int *start)
 {
-    int result = 0;
     int len = 1;
-    char str_nbr = NULL;
+    char *str_nbr = NULL;
 
     while (is_number(str[*start]) == 'n')
         *start -= 1;
