@@ -24,12 +24,12 @@ SRC	=	my/my_compute_power_rec.c				\
 		my/my_put/my_putstr.c					\
 		my/str_manipulation/my_revstr.c			\
 		my/str_manipulation/my_strcapitalize.c	\
+		my/str_manipulation/my_strncat.c	\
 		my/str_manipulation/my_strcat.c			\
 		my/str_manipulation/my_strcmp.c			\
 		my/str_manipulation/my_strcpy.c			\
 		my/str_manipulation/my_strdup.c			\
 		my/is_true/my_str_islower.c				\
-		my/is_true/my_isneg.c					\
 		my/is_true/my_is_prime.c				\
 		my/is_true/my_str_isnum.c				\
 		my/is_true/my_str_isprintable.c			\

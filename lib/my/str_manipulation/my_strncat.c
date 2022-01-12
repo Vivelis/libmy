@@ -5,7 +5,7 @@
 ** fonction for my library
 */
 
-#include "../headers/my.h"
+#include "../../headers/my.h"
 
 char *my_strncat(char *dest, char const *src, int nb)
 {

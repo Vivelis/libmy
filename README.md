@@ -15,7 +15,6 @@ Don't forget to include __lib/headers/printf.h__ to use printf.
 ## functions
 void my_putchar(char c);</br>
 char *my_strstr(char *str, char const *to_find);</br>
-int my_isneg(int nb);</br>
 int my_strcmp(char const *s1, char const *s2);</br>
 int my_put_nbr(int nb);</br>
 int my_strncmp(char const *s1, char const *s2, int n);</br>
@@ -26,19 +25,17 @@ char *my_strlowcase(char *str);</br>
 int my_strlen(char const *str);</br>
 char *my_strcapitalize(char *str);</br>
 int my_getnbr(char const *str);</br>
-int my_str_isalpha(char const *str);</br>
 void my_sort_int_array(int *tab, int size);</br>
 int my_str_isnum(char const *str);</br>
 int my_compute_power_rec(int nb, int power);</br>
 int my_str_islower(char const *str);</br>
 int my_compute_square_root(int nb);</br>
 int my_str_isupper(char const *str);</br>
-int my_is_prime(int nb);</br>
+char my_is_prime(int nb);</br>
 int my_str_isprintable(char const *str);</br>
 int my_find_prime_sup(int nb);</br>
 int my_showstr(char const *str);</br>
 char *my_strcpy(char *dest, char const *src);</br>
-int my_showmem(char const *str, int size);</br>
 char *my_strncpy(char *dest, char const *src, int n);</br>
 char *my_strcat(char *dest, char const *src);</br>
 char *my_revstr(char *str);</br>
@@ -52,7 +49,6 @@ char *dup_nchar(char *str, int n);</br>
 char is_number(char input);</br>
 int my_revstrtol(char *str, int *start);</br>
 char *my_inttos(int nbr);</br>
-int my_intlen(int nbr);</br>
 int my_printf(const char *format, ...);</br>
 int my_puterror(char *str, int error_num);</br>
 int do_strmalloc(char **str, long size);</br>
