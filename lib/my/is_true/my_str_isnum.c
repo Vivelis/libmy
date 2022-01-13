@@ -24,6 +24,6 @@ char my_str_isnum(char *str)
     while (is_number(str[i]) == 'y')
         i++;
     if (i > nbr_start)
-        return 'n';
-    return 'y';
+        return 'y';
+    return 'n';
 }
