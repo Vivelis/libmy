@@ -10,10 +10,8 @@ SRC	=	prog/path.c
 TEST	=	tests/path.c
 MAIN	=	main/prog/path.c
 
-## path to acced the lib file
+## import lib options
 LIBPATH	=	./lib/
-
-## name of the lib
 LIBNAME	=	my
 
 ## name of the binaries
@@ -44,6 +42,8 @@ clean:
 
 fclean: clean
 	rm -f $(EXEC)
+	rm -f $(DEBUGBIN)
+	rm -f $(TESTBIN)
 	cd $(LIBPATH) && $(MAKE) fclean
 
 re: fclean all

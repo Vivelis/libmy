@@ -105,70 +105,459 @@ EXAMPLES
 
 --------------------------------------------------------------------------------
 
+NAME
+    my_strcmp - malloc a string
 
-int my_isneg(int nb);
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_strcmp(char const *s1, char const *s2);
 
-int my_strcmp(char const *s1, char const *s2);
+DESCRIPTION
 
-int my_put_nbr(int nb);
 
-int my_strncmp(char const *s1, char const *s2, int n);
+RETURN
 
-void my_swap(int *a, int *b);
 
-char *my_strupcase(char *str);
+EXAMPLES
 
-char *my_strlowcase(char *str);
 
-int my_strlen(char const *str);
+--------------------------------------------------------------------------------
 
-char *my_strcapitalize(char *str);
+NAME
+    my_strncmp - 
 
-int my_getnbr(char const *str);
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_strncmp(char const *s1, char const *s2, int n);
 
-int my_str_isalpha(char const *str);
+DESCRIPTION
 
-void my_sort_int_array(int *tab, int size);
 
-int my_str_isnum(char const *str);
+RETURN
 
-int my_compute_power_rec(int nb, int power);
 
-int my_str_islower(char const *str);
+EXAMPLES
+    
 
-int my_compute_square_root(int nb);
+--------------------------------------------------------------------------------
 
-int my_str_isupper(char const *str);
+NAME
+    my_put_nbr - 
 
-int my_is_prime(int nb);
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_put_nbr(int nb);
 
-int my_str_isprintable(char const *str);
+DESCRIPTION
 
-int my_find_prime_sup(int nb);
 
-int my_showstr(char const *str);
+RETURN
 
-char *my_strcpy(char *dest, char const *src);
 
-int my_showmem(char const *str, int size);
+EXAMPLES
+    
 
-char *my_strncpy(char *dest, char const *src, int n);
+--------------------------------------------------------------------------------
 
-char *my_strcat(char *dest, char const *src);
 
-char *my_revstr(char *str);
+NAME
+    my_swap - 
 
-char *my_strncat(char *dest, char const *src, int nb);
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    void my_swap(int *a, int *b);
 
-void my_print_params(int lenght, char **array);
+DESCRIPTION
 
-void my_rev_params(int lenght, char **array);
 
-void my_sort_params(int lenght, char **array);
+RETURN
 
-int str_len(char *str);
 
-char *my_strdup(char const *src);
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_strupcase - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strupcase(char *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_strlowcase - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strlowcase(char *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_strlen - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_strlen(char const *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_strcapitalize - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strcapitalize(char *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_getnbr - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_getnbr(char const *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_sort_int_array - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    void my_sort_int_array(int *tab, int size);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_str_isnum - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char my_str_isnum(char *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_compute_power_rec - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_compute_power_rec(int nb, int power);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_str_isupper - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char my_str_isupper(char *str);NAME
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_str_islower - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char my_str_islower(char *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_compute_square_root - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_compute_square_root(int nb);NAME
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_is_prime - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char my_is_prime(int nb);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_str_isprintable - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char my_str_isprintable(char *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_find_prime_sup - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    int my_find_prime_sup(int nb);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_strcpy - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strcpy(char *dest, char const *src);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+NAME
+    my_strncpy - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strncpy(char *dest, char const *src, int n);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_strcat - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strcat(char *dest, char const *src);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+NAME
+    my_strncat - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strncat(char *dest, char const *src, int nb);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+
+NAME
+    my_revstr - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_revstr(char *str);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
+NAME
+    my_strdup - 
+
+SYNOPSIS
+    #include "lib/my/my.h"
+    
+    char *my_strdup(char const *src);
+
+DESCRIPTION
+
+
+RETURN
+
+
+EXAMPLES
+    
+
+--------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 
