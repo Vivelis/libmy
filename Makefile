@@ -6,7 +6,7 @@
 ##
 
 ## path for each scripts
-SRC	=	prog/path.c
+SRC		=	prog/path.c
 TEST	=	tests/path.c
 MAIN	=	main/prog/path.c
 
@@ -15,12 +15,12 @@ LIBPATH	=	./lib/
 LIBNAME	=	my
 
 ## name of the binaries
-EXEC	=	exec_name
+EXEC		=	exec_name
 DEBUGBIN	=	debug
-TESTBIN	=	unit_test
+TESTBIN		=	unit_test
 
 ## flags
-CFLAG	=	-W
+CFLAG		=	-W
 DEBUGFLAG	=	-g3 -Wall -Wextra
 TESTFLAG	=	-lcriterion
 
