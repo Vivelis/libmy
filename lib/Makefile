@@ -41,6 +41,7 @@ SRC	=	my/math/my_compute_power_rec.c			\
 		my/str_manipulation/my_strncpy.c		\
 		my/str_manipulation/my_strstr.c			\
 		my/str_manipulation/my_strupcase.c		\
+		my/str_manipulation/my_strndup.c		\
 		my/converters/my_revstrtol.c			\
 		my/converters/my_getnbr.c				\
 		my/converters/my_strtol.c				\
