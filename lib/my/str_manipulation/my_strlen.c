@@ -8,9 +8,9 @@
 
 #include <stddef.h>
 
-int my_strlen(char const *str)
+size_t my_strlen(char const *str)
 {
-    int cmpt = 0;
+    size_t cmpt = 0;
 
     if (str == NULL)
         return 0;
