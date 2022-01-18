@@ -51,5 +51,5 @@ int my_intlen(int nbr);
 int my_printf(const char *format, ...);
 int my_puterror(char *str, int error_num);
 int do_strmalloc(char **str, long size);
-char *my_strndup(char *str, int nbr);
+char *my_strndup(char *str, int len);
 #endif

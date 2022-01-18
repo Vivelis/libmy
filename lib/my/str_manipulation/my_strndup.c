@@ -8,16 +8,16 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-char *my_strndup(char *str, int nbr)
+char *my_strndup(char *str, int len)
 {
     char *dup = NULL;
 
     if (str == NULL)
         return NULL;
-    dup = malloc(sizeof(char) * (nbr + 1));
+    dup = malloc(sizeof(char) * (len + 1));
     if (dup == NULL)
         return NULL;
-    for (int i = 0; i < nbr; i++) {
+    for (int i = 0; i < len; i++) {
         dup[i] = str[i];
         if (str[i] == '\0')
             return dup;
