@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2021
-** my_put_nbr
+** my_putnbr
 ** File description:
 ** fonction for my library
 */
