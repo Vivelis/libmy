@@ -20,7 +20,7 @@ SRC	=	my/math/my_compute_power_rec.c			\
 		my/manipulations/my_memset.c			\
 		my/my_put/my_putchar.c					\
 		my/my_put/my_puterror.c					\
-		my/my_put/my_put_nbr.c					\
+		my/my_put/my_putnbr.c					\
 		my/my_put/my_putstr.c					\
 		my/str_manipulation/my_revstr.c			\
 		my/str_manipulation/my_strcapitalize.c	\
