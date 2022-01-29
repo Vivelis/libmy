@@ -2,17 +2,19 @@
 
 ### libmy library for epitech
 
-* [How_to_use_it](#how_to_use_it)
-* [Functions](#functions)
+- [How_to_use_it](#how_to_use_it)
+- [Functions](#functions)
 
 ## how_to_use_it
+
 Do not touch to the lib forlder.</br>
 The first Makefile is an exemple and can be used to create your own.</br>
 You can re-use the repos structure.</br>
-Don't forget to include libmy header that you can find in __lib/headers/my.h__.</br>
-Don't forget to include __lib/headers/printf.h__ to use printf.
+Don't forget to include libmy header that you can find in **lib/headers/my.h**.</br>
+Don't forget to include **lib/headers/printf.h** to use printf.
 
 ## functions
+
 void my_putchar(char c);</br>
 char *my_strstr(char *str, char const *to_find);</br>
 int my_strcmp(char const *s1, char const *s2);</br>
@@ -51,4 +53,4 @@ int my_revstrtol(char *str, int *start);</br>
 char *my_inttos(int nbr);</br>
 int my_printf(const char *format, ...);</br>
 int my_puterror(char *str, int error_num);</br>
-int do_strmalloc(char **str, long size);</br>
+int do_strmalloc(char \*\*str, long size);</br>
