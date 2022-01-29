@@ -7,3 +7,5 @@
 *~
 lib/my/*.o
 lib/*.o
+includes/my.h
+includes/printf_header.h

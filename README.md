@@ -16,7 +16,7 @@ Don't forget to include __lib/headers/printf.h__ to use printf.
 void my_putchar(char c);</br>
 char *my_strstr(char *str, char const *to_find);</br>
 int my_strcmp(char const *s1, char const *s2);</br>
-int my_put_nbr(int nb);</br>
+int my_putnbr(int nb);</br>
 int my_strncmp(char const *s1, char const *s2, int n);</br>
 void my_swap(int *a, int *b);</br>
 char *my_strupcase(char *str);</br>
