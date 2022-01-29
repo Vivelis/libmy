@@ -7,3 +7,4 @@
 *~
 lib/my/*.o
 lib/*.o
+include

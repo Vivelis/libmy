@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2021
-## Makefile
+## The Marvelous Libmy
 ## File description:
 ## Makefile
 ##
@@ -8,8 +8,8 @@
 #library name
 LIB	=	libmy.a
 
-#Compiler and Linker
-CC          := cc
+#copy path
+HDRDIR	=	../include
 
 #library sources
 SRC	=	my/math/my_compute_power_rec.c			\
@@ -55,33 +55,48 @@ SRC	=	my/math/my_compute_power_rec.c			\
 		my/my_printf/my_printf_point.c			\
 		my/my_printf/my_printf_setflag.c		\
 		my/my_printf/my_printf_flag_detection.c
+HDR	=	headers/my.h	\
+		headers/printf_header.h
+
+#Compiler and Linker
+CC	= cc
+OBJ	=	$(SRC:.c=.o)
 
 #obj file path
 BUILDDIR=	obj
 SRCDIR	=	my
-SRCEXT      := c
-OBJEXT      := o
 
 #flags
-CFLAGS      := -Wall
+CFLAGS	=	-Wall -Werror
 
 #------------------------------------------------------------------------------
 #DO NOT EDIT BELOW THIS LINE
 #------------------------------------------------------------------------------
 
-OBJ	=	$(SRC:.c=.o)
-
-$(LIB): $(OBJ)
-	ar rc $(LIB) $(OBJ)
+%.o: %.c
+	@$(CC) $(CFLAGS) -c -o $@ $^\
+	&& printf "[\033[1;35mcompiled\033[0m]% 50s\n" $< |  tr ' ' '.'\
+	|| printf "[\033[1;31merror\033[0m]% 50s\n" $< |  tr ' ' '.'
 
 all: $(LIB)
 
+$(LIB): $(OBJ)
+	@cp $(HDR) $(HDRDIR)
+	@ar rc $(LIB) $(OBJ)
+	@printf "\e[1;36mFinished compiling library\e[0m\n"
+
 clean:
-	rm -f *~
-	rm -f *#
+	@rm -f *~
+	@rm -f *#
+	@rm -f $(OBJ)
+	@printf "\e[0;33mDeleted all .o in lib\e[0m\n"
 
 fclean: clean
-	rm -f $(OBJ)
-	rm -f $(LIB)
+	@rm -f $(LIB)
+	@printf "\e[0;33mDeleted libmy.a\e[0m\n"
+	@cd $(HDRDIR) && rm -f $(notdir $(HDR))
+	@printf "\e[1;32mDeleted all .o in lib and all libmy.a\e[0m\n"
 
 re: fclean all
+
+.PHONY: all clean fclean re
