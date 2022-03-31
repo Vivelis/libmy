@@ -22,5 +22,6 @@ char *my_strndup(char *str, int len)
         if (str[i] == '\0')
             return dup;
     }
+    dup[len] = '\0';
     return dup;
 }
