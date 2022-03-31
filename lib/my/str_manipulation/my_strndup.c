@@ -8,7 +8,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-char *my_strndup(char *str, int len)
+char *my_strndup(const char *str, int len)
 {
     char *dup = NULL;
 
