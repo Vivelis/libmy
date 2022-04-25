@@ -49,11 +49,13 @@ int my_puterror(char *str, int error_num);
 int my_putnbr(int nbr);
 
 /**
- * @brief 
+ * @brief The my_printf() function, write in the std output, the string format
+ * filled with, the parameters positioned after the format string.
  * 
- * @param format 
- * @param ... 
- * @return int 
+ * @param format string to print with or with flags
+ * @param ... variables corresponding to the given flags
+ * @return 84 on error, else return the number of characters
+ * printed (without '\0')).
  */
 int my_printf(const char *format, ...);
 
