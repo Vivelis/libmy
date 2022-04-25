@@ -42,8 +42,7 @@ int my_strtol(char *str, int *end_index)
     int i = 0;
     char *str_nbr = NULL;
 
-    while (is_number(str[start]) == 'n' && str[start] != '-' &&
-           str[start] != '\0')
+    while (str[start] && is_number(str[start]) == 'n' && str[start] != '-')
         start++;
     if (str[i + start] == '-')
         i++;
