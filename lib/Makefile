@@ -81,7 +81,7 @@ CFLAGS	=	-Wall -Werror
 all: $(LIB)
 
 $(LIB): $(OBJ)
-	@cp $(HDR) $(HDRDIR)
+	-@cp $(HDR) $(HDRDIR)
 	@ar rc $(LIB) $(OBJ)
 	@printf "\e[1;36mFinished compiling library\e[0m\n"
 
@@ -94,7 +94,7 @@ clean:
 fclean: clean
 	@rm -f $(LIB)
 	@printf "\e[0;33mDeleted libmy.a\e[0m\n"
-	@cd $(HDRDIR) && rm -f $(notdir $(HDR))
+	-@cd $(HDRDIR) && rm -f $(notdir $(HDR))
 	@printf "\e[1;32mDeleted all .o in lib and all libmy.a\e[0m\n"
 
 re: fclean all
