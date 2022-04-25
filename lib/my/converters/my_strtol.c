@@ -20,18 +20,6 @@ char is_number(char input)
     return 'n';
 }
 
-char *dup_nchar(char *str, int n)
-{
-    char *str_nbr = NULL;
-
-    str_nbr = malloc(sizeof(char) * (n + 1));
-    while (n > 0) {
-        str_nbr[n - 1] = str[n - 1];
-        n--;
-    }
-    return str_nbr;
-}
-
 int unsigned_nbr_to_int(char *str_nbr)
 {
     int indent = 1;
