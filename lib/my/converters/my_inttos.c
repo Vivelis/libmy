@@ -9,7 +9,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 
-int my_intlen(int nbr)
+static int my_intlen(int nbr)
 {
     if (nbr == 0)
         return nbr;

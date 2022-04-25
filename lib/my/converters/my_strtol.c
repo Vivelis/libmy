@@ -20,19 +20,6 @@ char is_number(char input)
     return 'n';
 }
 
-char *dup_nchar(char *str, int n)
-{
-    char *str_nbr = NULL;
-
-    str_nbr = malloc(sizeof(char) * (n + 1));
-    my_memset(str_nbr, '\0', n + 1);
-    while (n > 0) {
-        str_nbr[n - 1] = str[n - 1];
-        n--;
-    }
-    return str_nbr;
-}
-
 int unsigned_nbr_to_int(char *str_nbr)
 {
     int indent = 1;
@@ -55,8 +42,7 @@ int my_strtol(char *str, int *end_index)
     int i = 0;
     char *str_nbr = NULL;
 
-    while (is_number(str[start]) == 'n' && str[start] != '-' &&
-           str[start] != '\0')
+    while (str[start] && is_number(str[start]) == 'n' && str[start] != '-')
         start++;
     if (str[i + start] == '-')
         i++;
