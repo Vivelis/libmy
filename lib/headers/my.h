@@ -74,15 +74,6 @@ int do_strmalloc(char **str, long size);
  * @brief 
  * 
  * @param str 
- * @param n 
- * @return char* 
- */
-char *dup_nchar(char *str, int n);
-
-/**
- * @brief 
- * 
- * @param str 
  * @return char* 
  */
 char *my_revstr(char *str);
