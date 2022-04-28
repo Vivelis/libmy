@@ -676,25 +676,6 @@ RETURN
 
 EXAMPLE
 
-
---------------------------------------------------------------------------------
-
-NAME
-    dup_nchar
-
-SYNOPSIS
-    #include "lib/my/my.h"
-
-    char *dup_nchar(char *str, int n);
-
-DESCRIPTION
-
-
-RETURN
-
-
-EXAMPLE
-
 --------------------------------------------------------------------------------
 
 NAME
