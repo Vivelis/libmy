@@ -50,7 +50,7 @@ int my_strtol(char *str, int *end_index)
         i++;
     }
     *end_index += (i + start);
-    str_nbr = dup_nchar(&str[start], i);
+    str_nbr = my_strndup(&str[start], i);
     if (str_nbr[0] == '-') {
         i = unsigned_nbr_to_int(&str_nbr[1]) * -1;
     } else {

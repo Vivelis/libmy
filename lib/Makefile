@@ -9,32 +9,26 @@
 LIB	=	libmy.a
 
 #copy path
-HDRDIR	=	../../includes
+HDRDIR	=	../../include
 
 #library sources
 SRC	=	my/math/my_compute_power_rec.c			\
 		my/math/my_compute_square_root.c		\
 		my/math/my_sort_int_array.c				\
 		my/math/my_find_prime_sup.c				\
-		my/manipulations/my_swap.c				\
-		my/manipulations/my_memset.c			\
 		my/my_put/my_putchar.c					\
 		my/my_put/my_puterror.c					\
 		my/my_put/my_putnbr.c					\
 		my/my_put/my_putstr.c					\
+		my/manipulations/my_swap.c				\
+		my/manipulations/my_memset.c			\
 		my/str_manipulation/my_revstr.c			\
-		my/str_manipulation/dup_nchar.c			\
 		my/str_manipulation/my_strcapitalize.c	\
 		my/str_manipulation/my_strncat.c		\
 		my/str_manipulation/my_strcat.c			\
 		my/str_manipulation/my_strcmp.c			\
 		my/str_manipulation/my_strcpy.c			\
 		my/str_manipulation/my_strdup.c			\
-		my/is_true/my_str_islower.c				\
-		my/is_true/my_is_prime.c				\
-		my/is_true/my_str_isnum.c				\
-		my/is_true/my_str_isprintable.c			\
-		my/is_true/my_str_isupper.c				\
 		my/str_manipulation/my_strlen.c			\
 		my/str_manipulation/do_strmalloc.c		\
 		my/str_manipulation/my_strlowcase.c		\
@@ -43,6 +37,11 @@ SRC	=	my/math/my_compute_power_rec.c			\
 		my/str_manipulation/my_strstr.c			\
 		my/str_manipulation/my_strupcase.c		\
 		my/str_manipulation/my_strndup.c		\
+		my/is_true/my_str_islower.c				\
+		my/is_true/my_is_prime.c				\
+		my/is_true/my_str_isnum.c				\
+		my/is_true/my_str_isprintable.c			\
+		my/is_true/my_str_isupper.c				\
 		my/converters/my_revstrtol.c			\
 		my/converters/my_getnbr.c				\
 		my/converters/my_strtol.c				\

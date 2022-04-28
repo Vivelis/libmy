@@ -5,11 +5,15 @@
 ** compare the n first bytes of two strings.
 */
 
+#include <stddef.h>
+
 int my_strncmp(char const *s1, char const *s2, int n)
 {
     int s1_value = 0;
     int s2_value = 0;
 
+    if (s1 == NULL || s2 == NULL)
+        return -1;
     for (int i = 0; s1[i] != '\0' && i < n; i++) {
         s1_value += (int)s1[i];
     }
