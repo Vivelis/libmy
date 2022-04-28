@@ -35,6 +35,6 @@ int my_revstrtol(char *str, int *start)
             (str[*start - 1] == ' ' || str[*start - 1] == '('))
             *start -= 1;
     }
-    str_nbr = dup_nchar(&str[*start], len);
+    str_nbr = my_strndup(&str[*start], len);
     return (conv_nbr(str_nbr));
 }
