@@ -194,6 +194,15 @@ char *my_strcat(char *dest, char const *src);
 /**
  * @brief 
  * 
+ * @param str1
+ * @param str2
+ * @return char* 
+ */
+char *my_strcatm(char *str1, char *str2);
+
+/**
+ * @brief 
+ * 
  * @param dest 
  * @param src 
  * @param nb 
