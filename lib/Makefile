@@ -9,7 +9,7 @@
 LIB	=	libmy.a
 
 #copy path
-HDRDIR	=	../../include
+HDRDIR	=	../../includes
 
 #library sources
 SRC	=	my/math/my_compute_power_rec.c			\
