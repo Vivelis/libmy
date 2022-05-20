@@ -66,7 +66,7 @@ BUILDDIR=	obj
 SRCDIR	=	my
 
 #flags
-CFLAGS	=	-Wall -Werror
+CFLAGS	=	-Wall -Werror -Iheaders
 
 #------------------------------------------------------------------------------
 #DO NOT EDIT BELOW THIS LINE
