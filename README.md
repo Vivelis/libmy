@@ -6,7 +6,7 @@
 * [Functions](#functions)
 
 ## how_to_use_it
-Do not touch to the lib forlder.</br>
+Do not touch to the lib folder.</br>
 The first Makefile is an exemple and can be used to create your own.</br>
 You can re-use the repos structure.</br>
 Don't forget to include libmy header that you can find in __lib/headers/my.h__.</br>
