@@ -10,12 +10,18 @@
 
 static int conv_nbr(char *str_nbr)
 {
+    int result = 0;
+
+    if (str_nbr == NULL)
+        return 0;
     if (str_nbr[0] == '-') {
+        result = unsigned_nbr_to_int(&str_nbr[1]) * -1;
         free(str_nbr);
-        return (unsigned_nbr_to_int(&str_nbr[1]) * -1);
+        return result;
     } else {
+        result = unsigned_nbr_to_int(str_nbr);
         free(str_nbr);
-        return (unsigned_nbr_to_int(str_nbr));
+        return result;
     }
 }
 
